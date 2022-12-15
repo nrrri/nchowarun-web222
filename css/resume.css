@@ -1,0 +1,192 @@
+/*
+I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. 
+No part of this assessment has been copied manually or electronically from any other source (including web sites) 
+except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. 
+I also declare that no part of this assignment has been distributed to other students.
+*/
+
+
+* {
+    font-family: 'Quicksand', sans-serif;
+} 
+
+/* Header */
+header {
+margin: 20px 0 15px 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+head a {
+    color: #4C411A;
+    margin: 0;
+}
+
+header #home_bar {
+text-align: left;
+text-decoration: none;
+color: #F3EED9;
+margin: 0;
+
+}
+header #menu_bar {
+    text-align: right;
+text-decoration: none;
+color: #F3EED9;
+margin: 0;
+    }
+
+header div {
+    text-decoration: none;
+    color: #4C411A;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 800;
+
+}
+header #profession {
+    color: #F3EED9;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: right;
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+
+/* Body */
+
+body {
+    background-color: #A4AA83;
+    color: #F3EED9;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Using DOM and loop the image */
+    /* background-image: linear-gradient(to bottom, #f3eed914, rgba(0, 0, 0, 0.734)),url("https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+hr {
+    background-color: #D8DDB8;
+    border: none;
+    height: 1px;
+    width: 100%;
+    margin: 0;
+    
+}
+
+/* Cover picture */
+#homepageCover {
+    position: relative;
+
+}
+
+#homepageCover p {
+    font-size: 1.1em;
+    margin: 0;
+    bottom: 2em;
+    left: 45%;
+}
+#homepageCover span {
+    margin: 0;
+    bottom: 0.8em;
+    left: 44.5%;
+    color: #A4AA83;
+    font-style: italic;
+}
+
+#btnHomepage {
+    color: #F3EED9;
+    position: absolute;
+    border: 1px solid #D8DDB8;
+    padding: 5px;
+    margin: 0;
+    bottom: 1em;
+    left: 43%;
+    border-radius: 0.5em;
+    background-color: #16130880;
+    text-decoration: none;
+}
+
+#btnHomepage:hover {
+   
+    background-color: #d8ddb848;
+}
+
+
+/* Container Cards */
+#containerCards {
+    grid-template-columns: auto auto auto;
+    display: grid;
+    column-gap: 15px;
+    margin: 70px 0px;
+    justify-content: center;
+}
+
+/* Card Menu */
+.card_menu {
+    display: inline-block;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    color:#A4AA83;
+
+}
+
+.card_menu:hover {
+    color: #F3EED9;
+}
+
+.card_menu div {
+    height: 450px;
+    border-radius: 25px;
+    filter: grayscale(100%);
+    
+    background-image:
+    linear-gradient(to bottom, #f3eed914, rgba(0, 0, 0, 0.734)),url("https://images.unsplash.com/photo-1571513800374-df1bbe650e56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80")
+}
+
+.card_menu div:hover {
+    filter: grayscale(0%);
+    background-image:
+    linear-gradient(to bottom, rgba(137, 137, 137, 0), rgba(0, 0, 0, 0.803)),url("https://images.unsplash.com/photo-1571513800374-df1bbe650e56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+
+}
+
+.card_menu h2 {
+    position: absolute;
+    font-size: 1.15em;
+    font-weight: 300;
+    margin: 0;
+    bottom: 1rem;
+    left: 100px;
+}
+
+/* Nav bar */
+
+
+/* Responsive web design */
+@media (max-width: 400px) {
+    body {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    body {
+      font-size: 1.25rem;
+    }
+  }
